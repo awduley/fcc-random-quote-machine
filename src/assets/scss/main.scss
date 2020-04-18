@@ -1,0 +1,73 @@
+@import 'config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Martel', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 1s ease;
+}
+
+#quote-box {
+  width: 40rem;
+  background: #fdfdfd;
+  border-radius: .2rem;
+  padding: 1rem 2rem;
+  flex-direction: column;
+
+  p {
+    text-align: center;
+    transition: all 1s ease;
+  }
+}
+
+#text {
+  margin: 1rem 0;
+  font-size: 2.2rem;
+}
+
+#author {
+
+  p {
+    font-size: 1.1rem;
+    text-align: right;
+    margin: 0 2rem;
+    position: relative;
+  }
+}
+
+.new-quote__button {
+  padding: .2rem .6rem;
+  margin: 2rem auto;
+  color: #fff;
+  border-radius: 5%;
+  display: block;
+}
+
+.tweet-quote {
+  display: block;
+  width: 100%;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+    i {
+      display: block;
+      text-align: center;
+    }
+
+  } 
+}
